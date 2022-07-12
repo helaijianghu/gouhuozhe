@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>{{name}}</p>
+</div>
+<script>
+    //2.创建一个VUE的实例对象
+    let vue;
+    vue = new Vue({
+        //3、告诉vue的实例对象，将来需要控制界面的那个区域
+        el: '#app',
+        //4.告诉Vue的实例对象，被控制区域的数据是什么
+        data: {
+            name: "何来江湖"
+        }
+    });
+</script>
+</body>
+</html>
